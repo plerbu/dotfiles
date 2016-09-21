@@ -1,0 +1,7 @@
+#Ignore Everything
+*
+# But not
+!.gitignore
+!/.config/openbox/
+!/.config/tint2/
+!.i3

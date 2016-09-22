@@ -85,6 +85,9 @@ time1_timezone =
 time2_timezone = 
 clock_tooltip_timezone = 
 
+time2_format = %a %d %b
+time2_font = Droid Sans 9
+t
 # Tooltips
 tooltip = 0
 tooltip_padding = 2 2

@@ -9,8 +9,10 @@ urxvt.depth: 32
 urxvt.background: rgba:0000/0000/0000/bbbb
 URxvt.foreground: grey80
 URxvt.tintColor: #262626
-URxvt.borderLess: true
-URxvt.borderColor: #888888
+!URxvt.borderLess: true ! Borderless-mode 
+!URxvt.borderColor: #888888 ! Borderless-mode
+URxvt.borderLess: false
+URxvt.borderColor: #303030
 
 *foreground:     rgba:0000/0000/0000/dddd
 *background:     rgb:10/10/10

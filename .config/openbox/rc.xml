@@ -287,6 +287,9 @@
       <action name="ToggleShowDesktop"/>
     </keybind>
     <!-- Keybindings for windows -->
+    <keybind key="A-S-d">
+       <action name="ToggleDecorations"/>
+    </keybind> 
     <keybind key="A-S-Q">
       <action name="Close"/>
     </keybind>

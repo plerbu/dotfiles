@@ -384,7 +384,7 @@
     </keybind>
     <keybind key="A-0x24">
       <action name="Execute">
-        <command>urxvt</command>
+        <command>xfce4-terminal</command>
       </action>
     </keybind>
     <keybind key="A-d">

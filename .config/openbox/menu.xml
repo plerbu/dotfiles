@@ -44,11 +44,6 @@
 					<execute>subl</execute>
 				</action>
 			</item>
-			<item label="RStudio">
-				<action name="Execute">
-					<execute>rstudio</execute>
-				</action>
-			</item>
 		</menu>
 		<separator/>
 		<menu id="root-menu-34735" label="Config">

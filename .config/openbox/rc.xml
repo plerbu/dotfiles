@@ -42,8 +42,8 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>1977-Grey</name>
-    <titleLayout>NDLIMC</titleLayout>
+    <name>Arc_OSX</name>
+    <titleLayout>NLIMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
       N: window icon
@@ -57,57 +57,57 @@
     <keepBorder>no</keepBorder>
     <animateIconify>no</animateIconify>
     <font place="ActiveWindow">
-      <name>sans</name>
-      <size>8</size>
+      <name>Lucida Grande Medium</name>
+      <size>9</size>
       <!-- font size in points -->
-      <weight>bold</weight>
+      <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
-      <slant>normal</slant>
+      <slant>Normal</slant>
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="InactiveWindow">
-      <name>sans</name>
-      <size>8</size>
+      <name>Lucida Grande Medium</name>
+      <size>9</size>
       <!-- font size in points -->
-      <weight>bold</weight>
+      <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
-      <slant>normal</slant>
+      <slant>Normal</slant>
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="MenuHeader">
-      <name>sans</name>
+      <name>Lucida Grande Medium</name>
       <size>9</size>
       <!-- font size in points -->
-      <weight>normal</weight>
+      <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
-      <slant>normal</slant>
+      <slant>Normal</slant>
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="MenuItem">
-      <name>sans</name>
+      <name>Lucida Grande Medium</name>
       <size>9</size>
       <!-- font size in points -->
-      <weight>normal</weight>
+      <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
-      <slant>normal</slant>
+      <slant>Normal</slant>
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="ActiveOnScreenDisplay">
-      <name>sans</name>
+      <name>Lucida Grande</name>
       <size>9</size>
       <!-- font size in points -->
-      <weight>bold</weight>
+      <weight>Bold</weight>
       <!-- 'bold' or 'normal' -->
-      <slant>normal</slant>
+      <slant>Normal</slant>
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="InactiveOnScreenDisplay">
-      <name>sans</name>
+      <name>Lucida Grande</name>
       <size>9</size>
       <!-- font size in points -->
-      <weight>bold</weight>
+      <weight>Bold</weight>
       <!-- 'bold' or 'normal' -->
-      <slant>normal</slant>
+      <slant>Normal</slant>
       <!-- 'italic' or 'normal' -->
     </font>
   </theme>
@@ -186,10 +186,10 @@
       </action>
     </keybind>
     <keybind key="XF86Back">
-    	<action name="GoToDesktop">
-    		<to>left</to>
-    		<wrap>no</wrap>
-    	</action>
+      <action name="GoToDesktop">
+        <to>left</to>
+        <wrap>no</wrap>
+      </action>
     </keybind>
     <keybind key="C-A-Right">
       <action name="GoToDesktop">
@@ -198,10 +198,10 @@
       </action>
     </keybind>
     <keybind key="XF86Forward">
-    	<action name="GoToDesktop">
-    		<to>right</to>
-    		<wrap>no</wrap>
-    	</action>
+      <action name="GoToDesktop">
+        <to>right</to>
+        <wrap>no</wrap>
+      </action>
     </keybind>
     <keybind key="C-A-Up">
       <action name="GoToDesktop">
@@ -288,8 +288,8 @@
     </keybind>
     <!-- Keybindings for windows -->
     <keybind key="A-S-d">
-       <action name="ToggleDecorations"/>
-    </keybind> 
+      <action name="ToggleDecorations"/>
+    </keybind>
     <keybind key="A-S-Q">
       <action name="Close"/>
     </keybind>
@@ -393,14 +393,14 @@
       </action>
     </keybind>
     <keybind key="W-l">
-    	<action name="Execute">
-    	  <command>lock</command>
-    	</action>
+      <action name="Execute">
+        <command>lock</command>
+      </action>
     </keybind>
     <keybind key="XF86ScreenSaver">
-    	<action name="Execute">
-    		<command>i3lock -i /home/blerpu/Pictures/Papes/reading_resized.jpg</command>
-    	</action>
+      <action name="Execute">
+        <command>i3lock -i /home/blerpu/Pictures/Papes/reading_resized.jpg</command>
+      </action>
     </keybind>
   </keyboard>
   <mouse>
@@ -765,9 +765,9 @@
     <!-- show the manage desktops section in the client-list-(combined-)menu -->
   </menu>
   <applications>
-  <application name="*">
-    <decor>yes</decor>
-  </application>
+    <application name="*">
+      <decor>yes</decor>
+    </application>
     <!--
   # this is an example with comments through out. use these to make your
   # own rules, but without the comments of course.

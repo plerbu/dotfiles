@@ -161,6 +161,7 @@ bar {
 
 exec --no-startup-id nitrogen --restore
 exec --no-startup-id dropbox start
+exec --no-startup-id pmount /dev/mmcblk0p1
 
 client.focused          #545454 #404040 #ffffff #292D2E
 client.focused_inactive #333333 #5F676A #ffffff #484e50

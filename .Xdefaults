@@ -12,7 +12,7 @@ URxvt.tintColor: #262626
 URxvt.borderLess: true 
 URxvt.borderColor: #303030
 
-*foreground:     rgba:0000/0000/0000/dddd
+*foreground:     rgb:00/00/00
 *background:     rgb:10/10/10
 !black
 *color0:         rgb:20/20/20

@@ -162,7 +162,7 @@ bar {
 exec --no-startup-id nitrogen --restore
 exec --no-startup-id dropbox start
 
-client.focused          #545454 #404040 #ffffff #00DA8E
+client.focused          #545454 #404040 #ffffff #292D2E
 client.focused_inactive #333333 #5F676A #ffffff #484e50
 client.unfocused        #333333 #232323 #888888 #292d2e
 client.urgent           #C10004 #900000 #ffffff #900000

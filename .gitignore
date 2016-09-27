@@ -4,6 +4,7 @@
 !.gitignore
 !/.config/openbox/
 !/.config/tint2/
+!/.config/mpv/
 !.i3
 !.xinitrc
 !.Xdefaults

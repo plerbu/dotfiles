@@ -2,6 +2,7 @@
 session=${1:-openbox}
 
 xmodmap ~/.Xmodmap
+xrdb ~/.Xresources
 
 case $session in
     i3|i3wm           ) exec i3;;

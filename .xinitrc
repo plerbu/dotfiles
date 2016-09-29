@@ -1,7 +1,7 @@
 # Here openbox is kept as default
 session=${1:-openbox}
 
-[[ -f ~/.Xmodmap ]] && xmodmap ~/.Xmodmap
+xmodmap ~/.Xmodmap
 
 case $session in
     i3|i3wm           ) exec i3;;

@@ -2,14 +2,13 @@ URxvt.termName: rxvt
 URxvt.scrollBar: false
 URxvt.saveLines: 500
 URxct.urlLauncher: chromium
-urxvt.font: xft:DejaVuSansMono:pixelsize=12
-urxvt.boldFont: xft:DejaVuSansMono:bold:pixelsize=12
+urxvt.font: xft:Bitstream Vera Sans Mono:pixelsize=12
+urxvt.boldFont: xft:Bitstream Vera Sans Mono:bold:pixelsize=12
 URxvt*background: #303030
 urxvt.depth: 32
 urxvt.background: rgba:0000/0000/0000/bbbb
 URxvt.foreground: grey80
 URxvt.tintColor: #262626
-# URxvt.borderLess: true 
 URxvt.borderLess: false
 URxvt.borderColor: #303030
 

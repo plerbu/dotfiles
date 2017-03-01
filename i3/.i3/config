@@ -16,6 +16,7 @@ set $mod Mod1
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
 font pango:Bitstream Vera Sans Mono 8
+
 # Before i3 v4.8, we used to recommend this one as the default:
 # font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
 # The font above is very space-efficient, that is, it looks good, sharp and
@@ -27,11 +28,15 @@ font pango:Bitstream Vera Sans Mono 8
 
 hide_edge_borders both
 
+# Disable mouse hover to focus
+
+focus_follows_mouse no
+
 # Use Mouse+Mod1 to drag floating windows to their wanted position
 floating_modifier Mod1
 
 # start a terminal
-bindsym Mod1+Return exec urxvt 
+bindsym Mod1+Return exec xfce4-terminal 
 
 # lock the screen
 bindsym Mod4+l exec lock
@@ -41,7 +46,7 @@ bindsym Mod1+Shift+q kill
 
 # start dmenu (a program launcher)
 # bindsym Mod1+d exec gmrun
-bindsym Mod1+d exec dmenu_run
+bindsym Mod1+d exec dmenu_run -b
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
@@ -156,20 +161,49 @@ bindsym Mod1+r mode "resize"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
-bar {
-        status_command i3status
-	colors {
-		background #232323
-		statusline #DCDCDC
-	}
-}
 
+#bar {
+#        status_command i3status
+#	colors {
+#		background #232323
+#		statusline #DCDCDC
+#	}
+#}
+
+# Starts i3blocks
+#bar {
+#        status_command i3blocks
+#}
+
+exec-always --no-startup-id killall -q polybar
+exec --no-startup-id polybar mybar
+
+# Starts programs
 exec --no-startup-id nitrogen --restore
-exec --no-startup-id dropbox start
-exec --no-startup-id pmount /dev/mmcblk0p1
-exec --no-startup-id deluge-gtk
+# exec --no-startup-id dropbox start
+exec --no-startup-id xmodmap ~/.Xmodmap
+exec --no-startup-id xfce4-power-manager
+exec --no-startup-id nm-applet
+#exec --no-startup-id xfce4-terminal
+exec --no-startup-id udiskie-mount /dev/disk/by-uuid/0806-F8D9
 
 client.focused          #545454 #404040 #ffffff #292D2E
 client.focused_inactive #333333 #5F676A #ffffff #484e50
 client.unfocused        #333333 #232323 #888888 #292d2e
 client.urgent           #C10004 #900000 #ffffff #900000
+
+# Pulse Audio Controls
+
+bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -q  set Master 2%+
+bindsym XF86AudioLowerVolume exec --no-startup-id amixer -q  set Master 2%-
+bindsym XF86AudioMute exec --no-startup-id amixer set Master toggle
+bindsym XF86AudioMicMute exec --no-startup-id amixer set Capture toggle
+
+# Remove window borders
+for_window [class="^.*"] border pixel 0
+
+# Configure i3-gaps
+set $default_gaps_inner 15 
+set $default_gaps_outer 10
+#gaps inner $default_gaps_inner
+#gaps outer $default_gaps_outer

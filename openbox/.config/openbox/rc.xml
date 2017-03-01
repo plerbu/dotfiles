@@ -42,8 +42,8 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>Arc_OSX</name>
-    <titleLayout>IMCL</titleLayout>
+    <name>Numix</name>
+    <titleLayout>LIMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
       N: window icon
@@ -54,7 +54,7 @@
       S: shade (roll up/down)
       D: omnipresent (on all desktops).
   -->
-    <keepBorder>no</keepBorder>
+    <keepBorder>yes</keepBorder>
     <animateIconify>no</animateIconify>
     <font place="ActiveWindow">
       <name>Lucida Grande Medium</name>
@@ -127,8 +127,9 @@
       <name>二</name>
       <name>三</name>
       <name>四</name>
+      <name>五</name>
     </names>
-    <popupTime>875</popupTime>
+    <popupTime>500</popupTime>
     <!-- The number of milliseconds to show the popup for when switching
        desktops.  Set this to 0 to disable the popup. -->
   </desktops>
@@ -384,7 +385,7 @@
     </keybind>
     <keybind key="A-0x24">
       <action name="Execute">
-        <command>urxvt</command>
+        <command>xfce4-terminal</command>
       </action>
     </keybind>
     <keybind key="A-d">
@@ -394,13 +395,36 @@
     </keybind>
     <keybind key="W-l">
       <action name="Execute">
-        <command>lock</command>
+        <command>i3lock -i /home/blerpu/Pictures/Papes/sadpanda.png</command>
       </action>
     </keybind>
     <keybind key="XF86ScreenSaver">
       <action name="Execute">
-        <command>i3lock -i /home/blerpu/Pictures/Papes/reading_resized.jpg</command>
+        <command>i3lock -i /home/blerpu/Pictures/Papes/sadpanda.png</command>
       </action>
+    </keybind>
+    <keybind key="XF86AudioRaiseVolume">
+      <action name="Execute">
+        <command>amixer set Master 2%+</command>
+      </action>
+    </keybind>
+    <keybind key="XF86AudioLowerVolume">
+      <action name="Execute">
+        <command>amixer set Master 2%-</command>
+      </action>
+    </keybind>
+    <keybind key="XF86AudioMicMute">
+      <action name="Execute">
+        <command>amixer set Capture toggle</command>
+      </action>
+    </keybind>
+    <keybind key="XF86AudioMute">
+      <action name="Execute">
+        <command>amixer set Master toggle</command>
+      </action>
+    </keybind>
+    <keybind key="A-f">
+      <action name="ToggleMaximizeFull"/>
     </keybind>
   </keyboard>
   <mouse>

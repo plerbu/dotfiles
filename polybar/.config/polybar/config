@@ -1,0 +1,127 @@
+
+;    *-------------------------------*
+;    |  Dotfiles  -  polybar/config  |
+;    *-------------------------------*
+
+
+; === Global settings ===
+
+[bar/mybar]
+
+; Position, monitor, etc.
+monitor = LVDS-1
+width = 100%
+height = 24
+;bottom = true
+
+; Global colours
+background = #2F343F
+foreground = #d0d0d0
+; background=#1F3638
+
+; Padding
+padding-left = 0
+padding-right = 2
+module-margin-left = 0
+module-margin-right = 1
+
+; Fonts
+font-0 = Inconsolata:size=10
+font-1 = FontAwesome:size=10
+
+; Modules
+modules-left = date
+modules-center = i3
+modules-right = volume battery
+
+; Tray
+tray-position = right
+
+; Scrolling
+scroll-up = i3wm-wsnext
+scroll-down = i3wm-wsprev
+
+; Inter process messaging
+enable-ipc = true
+
+
+; === Modules ===
+
+[module/i3]
+type = internal/i3
+format = <label-state>
+index-sort = true
+wrapping-scroll = true
+strip-wsnumbers = true
+
+label-focused = %name%
+label-focused-foreground = #ffffff
+label-focused-background = #146786
+label-focused-padding = 2
+
+label-unfocused = %name%
+label-unfocused-padding = 2
+
+label-urgent = %name%
+label-urgent-background = #f11430
+label-urgent-padding = 2
+
+[module/cpu]
+type = internal/cpu
+interval = 2
+format-prefix = " "
+format-suffix = " "
+format-background = #6297A5
+
+[module/memory]
+type = internal/memory
+interval = 2
+format-prefix = " "
+format-suffix = " "
+
+[module/wlan]
+type = internal/network
+interface = wlan0
+interval = 3.0
+
+format-connected = <ramp-signal> <label-connected>
+
+[module/volume]
+type = internal/volume
+format-volume = <label-volume>
+label-volume = %percentage%
+label-muted = --%
+
+;format-volume-background = #95BBC4
+format-volume-prefix = " "
+format-volume-suffix = " "
+;format-muted-background = #95BBC4
+format-muted-prefix = " "
+format-muted-suffix = " "
+
+
+[module/battery]
+type = internal/battery
+battery = BAT0
+adapter = AC
+full-at = 98
+
+;format-battery-background = #6297A5
+format-prefix = " "
+format-suffix = " "
+
+[module/date]
+type = internal/date
+interval = 1
+
+date = "%Y-%m-%d "
+
+time = %r
+;time-alt = %H:%M:%S
+
+;label = %date%%time%
+label = %time%
+
+;format-background = #146786
+format-prefix = " "
+format-suffix = " "

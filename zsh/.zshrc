@@ -88,6 +88,7 @@ source $ZSH/oh-my-zsh.sh
 alias poweroff="systemctl poweroff"
 alias reboot="systemctl reboot"
 alias minecraft="java -jar /home/blerpu/.minecraft/launcher.jar"
+alias suspend="systemctl suspend"
 
 path+=("/opt/genymobile/genymotion")
 path+=("/home/blerpu/.cargo/bin")

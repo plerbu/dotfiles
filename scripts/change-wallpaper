@@ -4,9 +4,9 @@ TOGGLE=$HOME/dotfiles/scripts/.toggle
 
 if [ ! -e $TOGGLE ]; then
 	touch $TOGGLE
-	nitrogen --set-zoom-fill --save $HOME/Pictures/debian.png
+	nitrogen --set-zoom-fill --save $HOME/Pictures/rain_resized.png
 else
 	rm $TOGGLE
-	nitrogen --set-zoom-fill --save $HOME/Pictures/kyuute_dress_girl.png
+	nitrogen --set-zoom-fill --save $HOME/Pictures/sovietschool_resized.png
 
 fi

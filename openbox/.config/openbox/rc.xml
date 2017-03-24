@@ -184,7 +184,7 @@
       <action name="GoToDesktop">
         <to>left</to>
         <wrap>no</wrap>
-	</action>
+      </action>
     </keybind>
     <keybind key="XF86Back">
       <action name="GoToDesktop">
@@ -294,7 +294,7 @@
         <to>5</to>
       </action>
     </keybind>
-	<keybind key="W-d">
+    <keybind key="W-d">
       <action name="ToggleShowDesktop"/>
     </keybind>
     <!-- Keybindings for windows -->
@@ -395,7 +395,7 @@
     </keybind>
     <keybind key="A-0x24">
       <action name="Execute">
-        <command>xfce4-terminal</command>
+        <command>lxterminal</command>
       </action>
     </keybind>
     <keybind key="A-d">
@@ -901,5 +901,8 @@
 
   # end of the example
 -->
+    <application class="Firefox">
+      <decor>no</decor>
+    </application>
   </applications>
 </openbox_config>

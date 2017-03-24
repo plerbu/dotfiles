@@ -8,8 +8,9 @@
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 #ZSH_THEME="flazz"
-ZSH_THEME="bira"
+#ZSH_THEME="bira"
 #ZSH_THEME="agnoster"
+ZSH_THEME="candy"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -90,6 +91,5 @@ alias reboot="systemctl reboot"
 alias minecraft="java -jar /home/blerpu/.minecraft/launcher.jar"
 alias suspend="systemctl suspend"
 
-path+=("/opt/genymobile/genymotion")
 path+=("/home/blerpu/.cargo/bin")
 export PATH
